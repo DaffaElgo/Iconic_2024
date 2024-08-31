@@ -25,7 +25,7 @@ with open('catboost_model.pkl', 'rb') as file:
 model = model_data['model']
 optimal_threshold = model_data['optimal_threshold']
 
-# Contoh penggunaan model dan threshold u       ntuk prediksi baru
+# Contoh penggunaan model dan threshold untuk prediksi baru
 def predict_with_threshold(X_new):
     y_probs = model.predict_proba(X_new)[:, 1]
     y_pred = (y_probs >= optimal_threshold).astype(int)
