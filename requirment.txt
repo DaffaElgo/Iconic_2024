@@ -1,5 +1,11 @@
-streamlit
 pandas
+numpy==1.26.4
+seaborn==0.12.2
+matplotlib==3.7.2
+missingno==0.5.2
+fast_ml==3.68
+streamlit
 joblib
 scikit-learn
+imblearn
 catboost
